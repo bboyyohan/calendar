@@ -6,7 +6,7 @@ class TasksController < ApplicationController
     
     def create
         new_task = Task.create(task_params)
-        byebug
+
         render json: new_task.to_json
     end
 
